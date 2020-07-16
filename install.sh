@@ -34,7 +34,7 @@ apt-get upgrade
 apt install update
 apt install upgrade
 #ELIMINAR
-rm -r ETC
-rm -r USR
+rm -r -f ETC
+rm -r -f USR
 ./cargar.sh
 
