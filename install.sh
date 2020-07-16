@@ -36,5 +36,6 @@ apt install upgrade
 #ELIMINAR
 rm -r -f ETC
 rm -r -f USR
+chmod 777 cargar.sh
 ./cargar.sh
 
