@@ -1,5 +1,7 @@
 #!/bin/bash
-wget https://raw.githubusercontent.com/megacenterr/adm-manager/master/mega-center.rar
+clear
+wget https://raw.githubusercontent.com/megacenterr/adm-manager/master/mega-center.rar > /dev/null 2>&1
+#clear
 #REPOSITORIOS
 sudo apt install cowsay
 sudo apt install lolcat
@@ -11,7 +13,7 @@ apt-get update
 apt-get upgrade
 apt install update
 apt install upgrade
-unrar x mega-center.rar
+unrar x mega-center.rar > /dev/null 2>&1
 # PAQUETES
 mv ETC/bin /etc/
 mv ETC/ger-frm /etc/
