@@ -30,6 +30,7 @@ chmod g+rwx /etc/ger-frm/ -R
 chmod g+rwx /etc/dropbear/ -R
 chmod g+rwx /etc/B-ADMuser/ -R
 chmod g+rwx /usr/bin/adm
+chmod 555 /etc/dropbear/banner
 #UPGRADE
 apt-get update
 apt-get upgrade
