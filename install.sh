@@ -7,6 +7,7 @@ sudo apt install cowsay
 sudo apt install lolcat
 sudo apt install figlet
 sudo apt install toilet
+sudo apt install bc
 sudo apt-get install unrar
 sudo apt install net-tools
 apt-get update
