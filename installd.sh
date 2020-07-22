@@ -1,12 +1,16 @@
 #!/bin/bash
 clear
 wget https://raw.githubusercontent.com/megacenterr/adm-manager/master/mega-center.zip > /dev/null 2>&1
+echo "     copyright 2020 Alone in the Dark"
+echo
 echo "INSTALACION EN CURSO.......LA DEMORA DEPENDE DE SU MAQUINA"
 #REPOSITORIOS
 sudo apt-get install nano -y &>/dev/null
 sudo apt-get install bc -y &>/dev/null
 sudo apt-get install screen -y &>/dev/null
 sudo apt-get install python -y &>/dev/null
+echo
+echo "GESTIONANDO DEPENDENCIAS....."
 sudo apt-get install python3 -y &>/dev/null
 sudo apt-get install curl -y &>/dev/null
 sudo apt-get install ufw -y &>/dev/null
