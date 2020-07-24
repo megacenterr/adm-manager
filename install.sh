@@ -46,13 +46,13 @@ clear
 echo
 echo "CONFIGURANDO PANEL PARA INICIAR........."
 #PERMISOS
-chmod g+rwx /etc/bin/ -R
-chmod g+rwx /etc/newadm/ -R
-chmod g+rwx /etc/ger-inst/ -R
-chmod g+rwx /etc/ger-frm/ -R
-chmod g+rwx /etc/dropbear/ -R
-chmod g+rwx /etc/B-ADMuser/ -R
-chmod g+rwx /usr/bin/adm
+chmod 777 /etc/bin/ -R
+chmod 777 /etc/newadm/ -R
+chmod 777 /etc/ger-inst/ -R
+chmod 777 /etc/ger-frm/ -R
+chmod 777 /etc/dropbear/ -R
+chmod 777 /etc/B-ADMuser/ -R
+chmod 777 /usr/bin/adm
 chmod 555 /etc/dropbear/banner
 sleep 1s
 #ELIMINAR
