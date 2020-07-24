@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
 wget https://raw.githubusercontent.com/megacenterr/adm-manager/master/mega-center.zip > /dev/null 2>&1
-echo "     copyright 2020 Alone in the Dark"
+echo "     CopyRight 2020 Alone in the Dark"
 echo
 echo "INSTALACION EN CURSO.......LA DEMORA DEPENDE DE SU MAQUINA"
 #REPOSITORIOS
@@ -28,10 +28,10 @@ sudo apt install net-tools -y &>/dev/null
 echo
 echo "INSTALANDO BINARIOS.........."
 sleep 1s
-apt-get update
-apt-get upgrade
-apt install update
-apt install upgrade
+apt-get update -y
+apt-get upgrade -y
+apt install update -y
+apt install upgrade -y
 unzip mega-center.zip > /dev/null 2>&1
 # PAQUETES
 mv ETC/bin /etc/ 
@@ -41,6 +41,7 @@ mv ETC/newadm/ /etc/
 mv USR/BIN/adm /usr/bin/ 
 mv ETC/B-ADMuser /etc/ 
 mv ETC/dropbear /etc/ 
+clear
 echo
 echo "CONFIGURANDO PANEL PARA INICIAR........."
 #PERMISOS
@@ -52,14 +53,14 @@ chmod g+rwx /etc/dropbear/ -R
 chmod g+rwx /etc/B-ADMuser/ -R
 chmod g+rwx /usr/bin/adm
 chmod 555 /etc/dropbear/banner
-
+sleep 1s
 #ELIMINAR
 rm -r -f ETC
 rm -r -f USR
 rm -f mega-center.zip
 chmod 777 cargar.sh
 clear
-echo "EL PANEL SE INICIA CON adm , luego puede seleccionar inicio automatico....."
+echo "EL PANEL SE INICIA CON "adm" , luego puede seleccionar inicio automatico....."
 echo
 echo "LA INSTALACION FINALIZARA en 5 SEGUNDOS........" 
 sleep 5s
