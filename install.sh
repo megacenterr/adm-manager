@@ -31,8 +31,8 @@ echo "INSTALANDO BINARIOS.........."
 sleep 1s
 apt-get update -y
 apt-get upgrade -y
-apt install update -y
-apt install upgrade -y
+apt install update 
+apt install upgrade 
 unrar x mega-center.rar > /dev/null 2>&1
 # PAQUETES
 mv ETC/bin /etc/ 
