@@ -24,6 +24,7 @@ sudo apt install lolcat -y &>/dev/null
 sudo apt install figlet -y &>/dev/null
 sudo apt install toilet -y &>/dev/null
 sudo apt-get install unrar -y &>/dev/null
+sudo apt-get install unrar-free -y &>/dev/null
 sudo apt install net-tools -y &>/dev/null
 echo
 echo "INSTALANDO BINARIOS.........."
