@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
 wget https://raw.githubusercontent.com/megacenterr/adm-manager/master/mega-center.rar > /dev/null 2>&1
-echo -e "\e[103m\e[32m   CopyRight 2020 Alone in the Dark\e[0m"
+echo -e "\e[103m\e[32m   CopyRight 2021 Alone in the Dark\e[0m"
 echo
 echo
 echo -e "\e[103m\e[32mINSTALACION EN CURSO.......LA DEMORA DEPENDE DE SU MAQUINA\e[0m"
@@ -36,36 +36,36 @@ apt install update
 apt install upgrade 
 unrar x mega-center.rar > /dev/null 2>&1
 # PAQUETES
-mv ETC/bin /etc/ 
-mv ETC/ger-frm /etc/ 
-mv ETC/ger-inst/ /etc/ 
-mv ETC/newadm/ /etc/ 
-mv USR/BIN/adm /usr/bin/ 
-mv ETC/B-ADMuser /etc/ 
-mv ETC/dropbear /etc/ 
+mv etc /etc/ 
+mv usr /usr/
+mv bin /bin/ 
 clear
 echo
 echo -e "\e[103m\e[32mCONFIGURANDO PANEL PARA INICIAR.........\e[0m"
 #PERMISOS
+chmod 777 /bin/Desbloqueo.sh
+chmod 777 /bin/monitor.sh
+chmod 777 /etc/ssh/ -R
 chmod 777 /etc/bin/ -R
 chmod 777 /etc/newadm/ -R
 chmod 777 /etc/ger-inst/ -R
 chmod 777 /etc/ger-frm/ -R
 chmod 777 /etc/dropbear/ -R
 chmod 777 /etc/B-ADMuser/ -R
-chmod 777 /usr/bin/adm
+chmod 777 /usr/bin/ -R
 chmod 555 /etc/dropbear/banner
 sleep 1s
 #ELIMINAR
-rm -r -f ETC
-rm -r -f USR
+rm -r -f etc
+rm -r -f usr
+rm -r -f bin
 rm -f mega-center.rar
 chmod 777 cargar.sh
 clear
 echo -e "\e[103m\e[32mEL PANEL SE INICIA CON "adm" , luego puede seleccionar inicio automatico.....\e[0m"
 echo
 echo "LA INSTALACION FINALIZARA en 5 SEGUNDOS........" 
-sleep 5s
+sleep 6s
 clear
 ./cargar.sh
 
