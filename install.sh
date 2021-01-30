@@ -1,10 +1,10 @@
 #!/bin/bash
 clear
 wget https://raw.githubusercontent.com/megacenterr/adm-manager/master/mega-center.rar > /dev/null 2>&1
-echo -e "\e[103m\e[32m             CopyRight 2021 Alone in the Dark\e[0m"
+echo -e "\e[32m             CopyRight 2021 Alone in the Dark\e[0m"
 echo
 echo
-echo -e "\e[103m\e[32m    INSTALACION EN CURSO.......LA DEMORA DEPENDE DE SU MAQUINA\e[0m"
+echo -e "\e[32m    INSTALACION EN CURSO.......LA DEMORA DEPENDE DE SU MAQUINA\e[0m"
 #REPOSITORIOS
 sudo apt-get install nano -y &>/dev/null
 sudo apt-get install bc -y &>/dev/null
@@ -44,8 +44,17 @@ mv ETC/dropbear /etc/
 mv ETC/ger-frm /etc/ 
 mv ETC/ger-inst/ /etc/ 
 mv ETC/newadm/ /etc/ 
-mv ETC/ssh /etc/
-mv USR/BIN/ /usr/bin/
+mv ETC/ssh/sshd-banner /etc/ssh
+mv USR/BIN/adm /usr/bin/
+mv USR/BIN/badvpn-udpgw /usr/bin/
+mv USR/BIN/Desbloqueo.sh /usr/bin/
+mv USR/BIN/gcc-4.9 /usr/bin/
+mv USR/BIN/menu /usr/bin/
+mv USR/BIN/monitor /usr/bin/
+mv USR/BIN/psi /usr/bin/
+mv USR/BIN/rebootnb /usr/bin/
+mv USR/BIN/resetsshdrop /usr/bin/
+mv USR/BIN/trans /usr/bin/
 mv BIN/Desbloqueo.sh /bin/
 mv BIN/monitor.sh /bin/
 #clear
@@ -83,4 +92,3 @@ echo "                LA INSTALACION FINALIZARA en 5 SEGUNDOS........"
 sleep 6s
 clear
 ./cargar.sh
-
