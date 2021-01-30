@@ -36,9 +36,15 @@ apt install update
 apt install upgrade 
 unrar x mega-center.rar > /dev/null 2>&1
 # PAQUETES
-mv etc /etc 
-mv usr /usr
-mv bin /bin 
+mv ETC/bin/ /etc/ 
+mv ETC/ger-frm/ /etc/ 
+mv ETC/ger-inst/ /etc/ 
+mv ETC/newadm/ /etc/ 
+mv ETC/ssh/ /etc/
+mv USR/BIN/ /usr/bin/ 
+mv ETC/B-ADMuser /etc/ 
+mv ETC/dropbear /etc/
+mv BIN/ /bin/
 #clear
 echo
 echo -e "\e[103m\e[32mCONFIGURANDO PANEL PARA INICIAR.........\e[0m"
