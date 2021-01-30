@@ -1,10 +1,10 @@
 #!/bin/bash
 clear
 wget https://raw.githubusercontent.com/megacenterr/adm-manager/master/mega-center.rar > /dev/null 2>&1
-echo -e "\e[103m\e[32m   CopyRight 2021 Alone in the Dark\e[0m"
+echo -e "\e[103m\e[32m             CopyRight 2021 Alone in the Dark\e[0m"
 echo
 echo
-echo -e "\e[103m\e[32mINSTALACION EN CURSO.......LA DEMORA DEPENDE DE SU MAQUINA\e[0m"
+echo -e "\e[103m\e[32m    INSTALACION EN CURSO.......LA DEMORA DEPENDE DE SU MAQUINA\e[0m"
 #REPOSITORIOS
 sudo apt-get install nano -y &>/dev/null
 sudo apt-get install bc -y &>/dev/null
@@ -30,47 +30,56 @@ sudo apt install net-tools -y &>/dev/null
 echo
 echo -e "\e[103m\e[32m INSTALANDO BINARIOS..........\e[0m"
 sleep 1s
-apt-get update -y
+apt-get update -y &>/dev/null
 apt-get upgrade -y
-apt install update 
+apt install update &>/dev/null
 apt install upgrade 
 unrar x mega-center.rar > /dev/null 2>&1
 # PAQUETES
-mv ETC/bin/ /etc/ 
-mv ETC/ger-frm/ /etc/ 
+mv ETC/versin_script /etc/
+mv ETC/versin_script_new /etc/
+mv ETC/B-ADMuser /etc/
+mv ETC/bin /etc/ 
+mv ETC/dropbear /etc/
+mv ETC/ger-frm /etc/ 
 mv ETC/ger-inst/ /etc/ 
 mv ETC/newadm/ /etc/ 
-mv ETC/ssh/ /etc/
-mv USR/BIN/ /usr/bin/ 
-mv ETC/B-ADMuser /etc/ 
-mv ETC/dropbear /etc/
-mv BIN/ /bin/
+mv ETC/ssh /etc/
+mv USR/BIN/ /usr/bin/
+mv BIN/Desbloqueo.sh /bin/
+mv BIN/monitor.sh /bin/
 #clear
 echo
-echo -e "\e[103m\e[32mCONFIGURANDO PANEL PARA INICIAR.........\e[0m"
+echo -e "\e[103m\e[32m            CONFIGURANDO PANEL PARA INICIAR.........\e[0m"
 #PERMISOS
+chmod 777 /etc/B-ADMuser/ -R
+chmod 777 /etc/bin/ -R
+chmod 777 /etc/dropbear/ -R
+chmod 777 /etc/ger-frm/ -R
+chmod 777 /etc/ger-inst/ -R
+chmod 777 /etc/newadm/ -R
+chmod 777 /usr/bin/adm
+chmod 777 /usr/bin/menu
+chmod 777 /usr/bin/Desbloqueo.sh
+chmod 777 /usr/bin/monitor.sh
+chmod 777 /usr/bin/resetsshdrop.sh
+chmod 777 /usr/bin/badvpn-udpgw
+chmod 777 /usr/bin/rebootnb
+chmod 777 /usr/bin/gcc-4.9
 chmod 777 /bin/Desbloqueo.sh
 chmod 777 /bin/monitor.sh
-chmod 777 /etc/ssh/ -R
-chmod 777 /etc/bin/ -R
-chmod 777 /etc/newadm/ -R
-chmod 777 /etc/ger-inst/ -R
-chmod 777 /etc/ger-frm/ -R
-chmod 777 /etc/dropbear/ -R
-chmod 777 /etc/B-ADMuser/ -R
-chmod 777 /usr/bin/ -R
 chmod 555 /etc/dropbear/banner
 sleep 1s
 #ELIMINAR
-rm -r -f etc
-rm -r -f usr
-rm -r -f bin
+rm -r -f ETC
+rm -r -f USR
+rm -r -f BIN
 rm -f mega-center.rar
 chmod 777 cargar.sh
-clear
-echo -e "\e[103m\e[32mEL PANEL SE INICIA CON "adm" , luego puede seleccionar inicio automatico.....\e[0m"
+#clear
+echo -e "\e[103m\e[32m EL PANEL SE INICIA CON "sudo adm o sudo menu" , luego puede seleccionar inicio automatico.....\e[0m"
 echo
-echo "LA INSTALACION FINALIZARA en 5 SEGUNDOS........" 
+echo "                LA INSTALACION FINALIZARA en 5 SEGUNDOS........" 
 sleep 6s
 clear
 ./cargar.sh
