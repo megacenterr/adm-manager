@@ -36,10 +36,10 @@ apt install update
 apt install upgrade 
 unrar x mega-center.rar > /dev/null 2>&1
 # PAQUETES
-mv etc /etc/ 
-mv usr /usr/
-mv bin /bin/ 
-clear
+mv etc /etc 
+mv usr /usr
+mv bin /bin 
+#clear
 echo
 echo -e "\e[103m\e[32mCONFIGURANDO PANEL PARA INICIAR.........\e[0m"
 #PERMISOS
