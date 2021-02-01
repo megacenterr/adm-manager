@@ -75,8 +75,8 @@ chmod 777 /usr/bin/resetsshdrop.sh
 chmod 777 /usr/bin/badvpn-udpgw
 chmod 777 /usr/bin/rebootnb
 chmod 777 /usr/bin/gcc-4.9
-chmod 777 /bin/Desbloqueo.sh
-chmod 777 /bin/monitor.sh
+chmod 777 /bin/Desbloqueo.sh > /dev/null 2>&1
+chmod 777 /bin/monitor.sh > /dev/null 2>&1
 chmod 555 /etc/dropbear/banner
 sleep 1s
 #ELIMINAR
