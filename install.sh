@@ -50,13 +50,14 @@ mv USR/BIN/badvpn-udpgw /usr/bin/
 mv USR/BIN/Desbloqueo.sh /usr/bin/
 mv USR/BIN/gcc-4.9 /usr/bin/
 mv USR/BIN/menu /usr/bin/
+mv USR/BIN/mega /usr/bin/
 mv USR/BIN/monitor /usr/bin/
 mv USR/BIN/psi /usr/bin/
 mv USR/BIN/rebootnb /usr/bin/
 mv USR/BIN/resetsshdrop /usr/bin/
 mv USR/BIN/trans /usr/bin/
-mv BIN/Desbloqueo.sh /bin/
-mv BIN/monitor.sh /bin/
+mv BIN/Desbloqueo.sh /bin/ > /dev/null 2>&1
+mv BIN/monitor.sh /bin/ > /dev/null 2>&1
 #clear
 echo
 echo -e "\e[103m\e[32m            CONFIGURANDO PANEL PARA INICIAR.........\e[0m"
@@ -69,6 +70,7 @@ chmod 777 /etc/ger-inst/ -R
 chmod 777 /etc/newadm/ -R
 chmod 777 /usr/bin/adm
 chmod 777 /usr/bin/menu
+chmod 777 /usr/bin/mega
 chmod 777 /usr/bin/Desbloqueo.sh
 chmod 777 /usr/bin/monitor.sh
 chmod 777 /usr/bin/resetsshdrop.sh
