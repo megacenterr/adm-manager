@@ -26,6 +26,7 @@ sudo apt install cowsay -y &>/dev/null
 sudo apt install lolcat -y &>/dev/null
 sudo apt install figlet -y &>/dev/null
 sudo apt install toilet -y &>/dev/null
+sudo apt-get install rar -y &>/dev/null
 sudo apt-get install unrar -y &>/dev/null
 sudo apt-get install unrar-free -y &>/dev/null
 sudo apt install net-tools -y &>/dev/null
@@ -36,7 +37,8 @@ apt-get update -y &>/dev/null
 apt-get upgrade -y
 apt install update &>/dev/null
 apt install upgrade &>/dev/null
-unrar x mega-centerV2.rar > /dev/null 2>&1
+chmod 777 mega-centerv2.rar &>/dev/null
+rar x mega-centerv2.rar > /dev/null 2>&1
 # PAQUETES
 cp -f -r ETC/ger-frm /etc/ > /dev/null 2>&1
 cp -f -r ETC/ger-inst /etc/ > /dev/null 2>&1
