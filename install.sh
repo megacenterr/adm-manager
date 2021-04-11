@@ -47,7 +47,7 @@ cp -f -r ETC/dropbear /etc/
 cp -f -r ETC/ger-frm /etc/ 
 cp -f -r ETC/ger-inst/ /etc/ 
 cp -f -r ETC/newadm/ /etc/ 
-cp -f -r ETC/ssh/ /etc/ssh
+cp -f -r ETC/ssh/ /etc/
 cp -f -r USR/BIN/adm /usr/bin/
 cp -f -r USR/BIN/badvpn-udpgw /usr/bin/
 cp -f -r USR/BIN/Desbloqueo.sh /usr/bin/
