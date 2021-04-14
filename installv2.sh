@@ -61,7 +61,7 @@ rm -rf USR
 rm -f mega-centerv2.rar
 chmod 777 cargarv2.sh
 #clear
-echo -e "\e[103m\e[32m EL PANEL SE INICIA CON sudo megav2r\e[0m"
+echo -e "\e[100m\e[32m         EL PANEL SE INICIA CON sudo megav2r\e[0m"
 echo
 echo -e "\e[103m\e[32m          LA INSTALACION FINALIZA EN 5 seg........\e[0m"
 sleep 6s
